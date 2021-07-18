@@ -1,1 +1,57 @@
-
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --footer-contact-color: rgba(255, 255, 255, 0, 6);
+  --logo-color: #000000;
+}
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* Списки без маркеров */
+ul {
+  list-style: none;
+}
+/* Logo */
+.logo {
+  color: var(--logo-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+/* Site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav .link:focus,
+.site-nav .link:hover,
+.contact-list .link:focus,
+.contact-list .link:hover {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* Контакты */
+.contact-list .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
