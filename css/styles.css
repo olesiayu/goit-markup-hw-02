@@ -3,8 +3,10 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-  --footer-contact-color: rgba(255, 255, 255, 0, 6);
+  --footer-contacts-color: rgba(255, 255, 255, 0, 6);
   --logo-color: #000000;
+  --background-color: #2f303a;
+  --light-background-color: #f5f4fa;
 }
 body {
   font-family: Roboto, sans-serif;
@@ -30,6 +32,9 @@ ul {
 .logo-accent {
   color: var(--accent-color);
 }
+.logo-white {
+  color: var(--primary-white-color);
+}
 /* Site nav */
 .site-nav .link {
   color: var(--title-text-color);
@@ -54,4 +59,108 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+/* Hero */
+.hero {
+  color: var(--primary-white-color);
+  background-color: var(--background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+/* Секция преимуществ */
+.list-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/* Заголовки h2 */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* Наша команда */
+.team {
+  background-color: var(--light-background-color);
+}
+.team-member {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+/* Футер */
+footer {
+  background-color: var(--background-color);
+}
+.address {
+  color: var(--primary-white-color);
+  font-style: normal;
+}
+.footer-contacts {
+  color: var(--footer-contacts-color);
+  font-style: normal;
+}
+.footer-contacts:focus,
+.footer-contacts:hover {
+  color: var(--primary-white-color);
+}
+/* Кнопки портфолио */
+.portfolio-button {
+  color: var(--title-text-color);
+  background-color: var(--light-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.portfolio-button.all {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+/* Проекты */
+.projects-list a {
+  text-decoration: none;
+}
+.project {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-type {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
 }
